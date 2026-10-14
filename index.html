@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Psicología Cristiana | Libérate de la culpa: 21 días (gratis)</title>
+<meta name="description" content="Descarga gratis el devocional «Libérate de la culpa: 21 días» y conoce Paz, la app de meditación cristiana gratuita. La mente se estudia. El alma se cuida.">
+<meta name="theme-color" content="#0B1B33">
+<meta property="og:title" content="Libérate de la culpa: 21 días — Devocional gratis">
+<meta property="og:description" content="Un camino diario para entender la culpa desde la fe y caminar en libertad. La mente se estudia. El alma se cuida.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noche:#0B1B33; --medio:#14305E; --profundo:#07111F;
+  --oro:#D9A441; --oro-claro:#F2C978; --oro-oscuro:#B9832A;
+  --blanco:#FFFFFF; --gris:#C9D2E0; --gris-2:#94A3BA;
+  --borde:rgba(255,255,255,.14); --vidrio:rgba(255,255,255,.06);
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --radio:16px; --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);font-size:17px;line-height:1.6;color:var(--gris);background:var(--noche);overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);color:var(--blanco);line-height:1.12;font-weight:700;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,6.4vw,3.2rem)}
+h3{font-size:1.45rem}
+p{max-width:62ch}
+.contenedor{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+.seccion{padding:80px 0;position:relative}
+.etiqueta{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--oro-claro);margin-bottom:16px}
+.etiqueta::before{content:"";width:28px;height:1px;background:var(--oro)}
+.lead{font-size:1.1rem;color:var(--gris);margin-top:16px}
+.centro{text-align:center}
+.centro p,p.centro{margin-left:auto;margin-right:auto}
+.centro .etiqueta::after{content:"";width:28px;height:1px;background:var(--oro)}
+.oro{color:var(--oro-claro)}
+.salto{position:absolute;left:0;top:-80px}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:16px 28px;border-radius:14px;font-family:var(--sans);font-weight:700;font-size:1.05rem;text-decoration:none;border:0;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease,background .2s ease;text-align:center}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-oro{background:linear-gradient(180deg,var(--oro-claro) 0%,var(--oro) 55%,var(--oro-oscuro) 100%);color:#1A1203;box-shadow:0 10px 30px -8px rgba(217,164,65,.6),inset 0 1px 0 rgba(255,255,255,.45)}
+.btn-oro:hover{transform:translateY(-2px);box-shadow:0 16px 38px -10px rgba(217,164,65,.75),inset 0 1px 0 rgba(255,255,255,.45)}
+.btn-grande{min-height:64px;font-size:1.15rem;padding:18px 34px}
+.btn-sec{background:rgba(255,255,255,.06);color:var(--blanco);border:1.5px solid rgba(255,255,255,.35)}
+.btn-sec:hover{background:rgba(255,255,255,.12);border-color:var(--oro-claro)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--oro-claro);outline-offset:3px}
+.botones{display:flex;flex-direction:column;gap:12px;margin-top:32px}
+.nota{font-size:.88rem;color:var(--gris-2);margin-top:12px}
+
+/* Barra superior */
+.barra{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s ease,box-shadow .3s ease,border-color .3s ease;border-bottom:1px solid transparent}
+.barra.fija{background:rgba(7,17,31,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--borde)}
+.barra .contenedor{display:flex;align-items:center;justify-content:space-between;gap:12px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--blanco);font-family:var(--serif);font-weight:700;font-size:1.15rem;line-height:1.05}
+.logo-marca{width:36px;height:36px;flex:none}
+.logo small{display:block;font-family:var(--sans);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--oro-claro);font-weight:600;margin-top:2px}
+.barra .btn{white-space:nowrap;min-height:44px;padding:10px 16px;font-size:.88rem;border-radius:12px}
+.barra .btn .largo{display:none}
+.s-libro .libro{width:min(220px,58vw)}
+.s-libro .escena-libro{padding-top:0}
+
+/* Hero */
+.hero{min-height:100svh;display:flex;align-items:center;padding:120px 0 72px;background:
+ radial-gradient(120% 70% at 50% 115%,rgba(217,164,65,.55) 0%,rgba(217,164,65,.18) 35%,transparent 62%),
+ radial-gradient(70% 50% at 85% 10%,rgba(40,80,150,.45) 0%,transparent 70%),
+ linear-gradient(180deg,var(--profundo) 0%,var(--noche) 38%,var(--medio) 72%,#4A3B26 100%);overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.55) 1px,transparent 1.2px);background-size:120px 120px;background-position:10px 20px;opacity:.12;pointer-events:none;mask-image:linear-gradient(180deg,#000 0%,transparent 60%);-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 60%)}
+.hero .contenedor{position:relative;z-index:1;display:grid;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,10vw,4.6rem)}
+.hero h1 em{font-style:italic;color:var(--oro-claro)}
+.hero .lead{font-size:1.15rem;color:#DCE3EE}
+.confianza{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:24px;font-size:.9rem;color:#DCE3EE;list-style:none}
+.confianza li{display:flex;align-items:center;gap:6px}
+.confianza svg{width:18px;height:18px;color:var(--oro-claro)}
+.luz{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(242,201,120,.35),transparent 65%);filter:blur(10px);right:-120px;bottom:-160px;pointer-events:none}
+
+/* Libro (portada en CSS) */
+.escena-libro{position:relative;display:flex;justify-content:center;perspective:1400px;padding:12px 0 24px}
+.escena-libro::before{content:"";position:absolute;width:78%;height:28px;bottom:6px;left:11%;background:radial-gradient(ellipse,rgba(0,0,0,.55),transparent 70%);filter:blur(6px)}
+.libro{position:relative;width:min(270px,70vw);aspect-ratio:2/3;transform:rotateY(-16deg) rotateX(4deg);transform-style:preserve-3d;transition:transform .6s ease;animation:flotar 7s ease-in-out infinite}
+.libro:hover{transform:rotateY(-6deg) rotateX(2deg)}
+.libro .tapa{position:absolute;inset:0;border-radius:4px 12px 12px 4px;overflow:hidden;background:
+ radial-gradient(90% 55% at 50% 100%,rgba(242,201,120,.9) 0%,rgba(217,164,65,.45) 35%,transparent 70%),
+ linear-gradient(180deg,#081428 0%,var(--noche) 45%,var(--medio) 100%);
+ box-shadow:inset 6px 0 10px -4px rgba(0,0,0,.6),inset -1px 0 0 rgba(255,255,255,.12),0 30px 60px -20px rgba(0,0,0,.7);display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:28px 20px 22px;text-align:center}
+.libro .tapa::before{content:"";position:absolute;inset:10px;border:1px solid rgba(242,201,120,.45);border-radius:2px 8px 8px 2px;pointer-events:none}
+.libro .lomo{position:absolute;left:0;top:0;bottom:0;width:14px;background:linear-gradient(90deg,rgba(0,0,0,.45),rgba(255,255,255,.08),rgba(0,0,0,.2));border-radius:4px 0 0 4px}
+.libro .paginas{position:absolute;top:6px;bottom:6px;right:-12px;width:14px;background:repeating-linear-gradient(180deg,#F3EEE3 0 2px,#E2D9C6 2px 3px);border-radius:0 4px 4px 0;transform:rotateY(60deg);transform-origin:left}
+.tapa .autor{font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:var(--oro-claro);font-weight:600;position:relative}
+.tapa .titulo{font-family:var(--serif);color:#fff;font-size:2.05rem;line-height:1;font-weight:700;position:relative}
+.tapa .titulo span{display:block;font-size:1rem;font-style:italic;color:var(--oro-claro);margin-top:10px;font-weight:600}
+.tapa .numero{font-family:var(--serif);font-size:4.4rem;line-height:.9;color:#1A1203;font-weight:700;position:relative;text-shadow:0 1px 0 rgba(255,255,255,.35)}
+.tapa .numero small{display:block;font-family:var(--sans);font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;font-weight:700;margin-top:4px}
+.sello{position:absolute;top:-30px;right:-30px;z-index:3;width:76px;height:76px;border-radius:50%;background:var(--oro);color:#1A1203;display:grid;place-items:center;text-align:center;font-weight:800;font-size:.8rem;line-height:1.1;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 10px 24px -6px rgba(0,0,0,.5);transform:rotate(12deg)}
+@keyframes flotar{0%,100%{translate:0 0}50%{translate:0 -10px}}
+
+/* Franja eslogan */
+.franja{background:linear-gradient(90deg,var(--oro-oscuro),var(--oro) 30%,var(--oro-claro) 50%,var(--oro) 70%,var(--oro-oscuro));color:#1A1203;padding:36px 0;text-align:center}
+.franja p{font-family:var(--serif);font-size:clamp(1.6rem,6vw,2.6rem);font-weight:700;line-height:1.2;max-width:none;color:#1A1203}
+.franja p span{font-style:italic;display:inline-block}
+
+/* Sección libro */
+.s-libro{background:linear-gradient(180deg,var(--noche) 0%,#0E2244 100%)}
+.rejilla-2{display:grid;gap:48px;align-items:center}
+.lista{list-style:none;display:grid;gap:14px;margin-top:24px}
+.lista li{display:flex;gap:14px;align-items:flex-start;color:#E3E9F2}
+.lista .check{flex:none;width:28px;height:28px;border-radius:50%;background:rgba(217,164,65,.16);border:1px solid rgba(217,164,65,.5);display:grid;place-items:center;margin-top:1px}
+.lista .check svg{width:15px;height:15px;color:var(--oro-claro)}
+.bloques{display:grid;gap:16px;margin-top:32px}
+.bloque{background:var(--vidrio);border:1px solid var(--borde);border-radius:var(--radio);padding:24px}
+.bloque h3{font-size:1.35rem;margin-bottom:4px}
+.pasos{display:grid;gap:12px;margin-top:32px;counter-reset:paso}
+.paso{display:flex;gap:14px;align-items:center;font-size:.98rem;color:#E3E9F2}
+.paso b{flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(180deg,var(--oro-claro),var(--oro));color:#1A1203;display:grid;place-items:center;font-family:var(--serif);font-size:1.2rem}
+
+/* App */
+.s-app{background:radial-gradient(80% 50% at 50% 0%,rgba(217,164,65,.14),transparent 70%),linear-gradient(180deg,#0E2244 0%,var(--medio) 100%)}
+.gratis-chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:24px;list-style:none}
+.gratis-chips li{border:1px solid rgba(242,201,120,.45);background:rgba(217,164,65,.1);color:#F6E3BC;border-radius:999px;padding:7px 14px;font-size:.88rem;font-weight:600}
+.tarjetas{display:grid;gap:16px;margin-top:48px}
+.tarjeta{background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.04));border:1px solid var(--borde);border-radius:var(--radio);padding:24px;transition:transform .25s ease,border-color .25s ease,background .25s ease}
+.tarjeta:hover{transform:translateY(-4px);border-color:rgba(242,201,120,.5)}
+.icono{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(160deg,rgba(242,201,120,.25),rgba(217,164,65,.08));border:1px solid rgba(242,201,120,.4);margin-bottom:16px}
+.icono svg{width:26px;height:26px;color:var(--oro-claro)}
+.tarjeta h3{font-size:1.4rem;margin-bottom:6px}
+.tarjeta p{font-size:.98rem;color:#C9D2E0}
+.tarjeta.destacada{background:linear-gradient(160deg,rgba(217,164,65,.22),rgba(255,255,255,.05));border-color:rgba(242,201,120,.55)}
+
+/* Canal */
+.s-canal{background:linear-gradient(180deg,var(--medio) 0%,var(--noche) 100%)}
+.formato{margin-top:28px;background:rgba(0,0,0,.25);border:1px dashed rgba(242,201,120,.5);border-radius:var(--radio);padding:20px 22px;font-family:var(--serif);font-size:1.35rem;color:#fff;line-height:1.3}
+.formato span{color:var(--oro-claro);font-style:italic}
+.videos{display:grid;gap:16px;margin-top:40px}
+.video{display:block;text-decoration:none;border-radius:var(--radio);overflow:hidden;border:1px solid var(--borde);background:#0A1830;transition:transform .25s ease,border-color .25s ease}
+.video:hover{transform:translateY(-4px);border-color:rgba(242,201,120,.5)}
+.miniatura{position:relative;aspect-ratio:16/8;display:flex;align-items:flex-end;padding:16px;background:radial-gradient(90% 80% at 80% 110%,rgba(217,164,65,.6),transparent 60%),linear-gradient(150deg,#0A1830,#1B3A6E)}
+.miniatura .play{position:absolute;top:14px;right:14px;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.95);display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.35)}
+.miniatura .play svg{width:18px;height:18px;color:var(--noche);margin-left:3px}
+.miniatura .tema{font-family:var(--serif);font-size:1.45rem;font-weight:700;color:#fff;line-height:1.1;position:relative;max-width:78%}
+.video .info{padding:16px 18px 20px}
+.video .info small{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--oro-claro);font-weight:600}
+.video .info p{color:#DCE3EE;font-size:.98rem;margin-top:4px}
+.btn-yt{background:#fff;color:#0B1B33;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}
+.btn-yt svg{color:#E1251B}
+.btn-yt:hover{transform:translateY(-2px)}
+
+/* Redes */
+.s-redes{background:var(--noche);padding:72px 0}
+.redes{display:grid;grid-template-columns:1fr;gap:12px;margin-top:40px}
+.red{display:flex;align-items:center;gap:12px;min-height:64px;padding:14px 16px;border-radius:14px;border:1px solid var(--borde);background:var(--vidrio);text-decoration:none;color:#fff;transition:transform .2s ease,border-color .2s ease,background .2s ease}
+.red:hover{transform:translateY(-3px);border-color:var(--oro-claro);background:rgba(217,164,65,.1)}
+.red svg{width:26px;height:26px;flex:none;color:var(--oro-claro)}
+.red span{display:flex;flex-direction:column;line-height:1.2;font-weight:600;font-size:.98rem;min-width:0}
+.red small{font-weight:400;font-size:.78rem;color:var(--gris-2);overflow-wrap:anywhere}
+
+/* Cierre */
+.cierre{padding:96px 0;background:
+ radial-gradient(110% 80% at 50% 120%,rgba(217,164,65,.6) 0%,rgba(217,164,65,.15) 45%,transparent 70%),
+ linear-gradient(180deg,var(--noche) 0%,var(--medio) 100%);overflow:hidden}
+.cierre .mensaje{font-size:1.2rem;color:#E3E9F2;margin-top:8px}
+.cierre .eslogan-grande{font-family:var(--serif);font-weight:700;color:#fff;font-size:clamp(2.4rem,10vw,5rem);line-height:1.05;margin:32px auto 8px;max-width:14ch}
+.cierre .eslogan-grande span{display:block;font-style:italic;color:var(--oro-claro)}
+.cierre .botones{align-items:center}
+
+/* Footer */
+footer{background:var(--profundo);padding:48px 0 32px;border-top:1px solid var(--borde);text-align:center}
+footer .logo{justify-content:center}
+footer .eslogan{font-family:var(--serif);font-style:italic;color:var(--oro-claro);font-size:1.2rem;margin:12px auto 24px}
+.mini-redes{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;list-style:none}
+.mini-redes a{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;border:1px solid var(--borde);color:#fff;transition:border-color .2s ease,color .2s ease}
+.mini-redes a:hover{border-color:var(--oro-claro);color:var(--oro-claro)}
+.mini-redes svg{width:20px;height:20px}
+.legal{font-size:.82rem;color:var(--gris-2);margin:28px auto 0;max-width:none}
+
+/* Botón flotante móvil */
+.cta-movil{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;transform:translateY(140%);transition:transform .35s ease}
+.cta-movil.visible{transform:none}
+.cta-movil .btn{width:100%;min-height:56px;box-shadow:0 14px 34px -8px rgba(0,0,0,.6),0 8px 24px -10px rgba(217,164,65,.7)}
+
+/* Animaciones de aparición */
+.aparecer{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.aparecer.visto{opacity:1;transform:none}
+.no-js .aparecer{opacity:1;transform:none}
+
+/* Tablet y escritorio */
+@media (min-width:600px){
+  .botones{flex-direction:row;flex-wrap:wrap}
+  .centro .botones,.cierre .botones{justify-content:center}
+  .tarjetas{grid-template-columns:repeat(2,1fr)}
+  .videos{grid-template-columns:repeat(2,1fr)}
+  .redes{grid-template-columns:repeat(3,1fr)}
+  .tarjeta:last-child{grid-column:1/-1}
+  .bloques{grid-template-columns:1fr 1fr}
+  .barra .btn .largo{display:inline}
+}
+@media (min-width:900px){
+  body{font-size:18px}
+  .contenedor{padding:0 40px}
+  .seccion{padding:112px 0}
+  .hero .contenedor{grid-template-columns:1.25fr .75fr}
+  .rejilla-2{grid-template-columns:.9fr 1.1fr;gap:72px}
+  .tarjetas{grid-template-columns:repeat(4,1fr)}
+  .tarjeta.ancha{grid-column:span 2}
+  .tarjeta:last-child{grid-column:1/-1}
+  .miniatura .tema{font-size:1.3rem;max-width:72%}
+  .rejilla-2{align-items:start}
+  .s-libro .libro{width:300px}
+  .s-libro .escena-libro{position:sticky;top:120px}
+  .hero .btn-grande{padding:18px 26px}
+  .videos{grid-template-columns:repeat(4,1fr)}
+  .redes{grid-template-columns:repeat(5,1fr)}
+  .red{flex-direction:column;text-align:center;padding:22px 12px;min-height:130px;justify-content:center}
+  .red span{align-items:center}
+  .cta-movil{display:none}
+  .libro{width:300px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .aparecer{opacity:1;transform:none}
+}
+</style>
+</head>
+<body class="no-js">
+
+<!-- SVG reutilizables -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gradOro" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2C978"/><stop offset="1" stop-color="#D9A441"/></linearGradient>
+  </defs>
+  <symbol id="i-descarga" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></symbol>
+  <symbol id="i-movil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5Z"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.8 15.1V8.9l5.4 3.1-5.4 3.1Z"/></symbol>
+  <symbol id="i-tiktok" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 2h-3.3v13.2a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9a6.3 6.3 0 1 0 5.3 6.2V8.6a7.9 7.9 0 0 0 4.4 1.4V6.7a4.5 4.5 0 0 1-4.4-4.7Z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21.9v-7.6h2.6l.4-3h-3V9.4c0-.9.3-1.5 1.5-1.5h1.6V5.2c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6v7.6A10 10 0 1 1 13.5 21.9Z"/></symbol>
+  <symbol id="i-rumble" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 9.6 9.7 3.4C7.2 2 4 3.8 4 6.7v10.6c0 2.9 3.2 4.7 5.7 3.3l10.6-6.2c2.3-1.4 2.3-3.4 0-4.8Zm-5.1 3.5-4.6 2.7c-.8.4-1.7-.1-1.7-1V9.2c0-.9 1-1.4 1.7-1l4.6 2.7c.8.5.8 1.7 0 2.2Z"/></symbol>
+</svg>
+
+<!-- 1. BARRA SUPERIOR -->
+<header class="barra" id="barra">
+  <div class="contenedor">
+    <a href="#inicio" class="logo" aria-label="La Psicología Cristiana, ir al inicio">
+      <svg class="logo-marca" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="#0B1B33" stroke="url(#gradOro)" stroke-width="1.5"/>
+        <path d="M20 8v24M13 15h14" stroke="url(#gradOro)" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M9 27c3.5-3 7.2-4.4 11-4.4S27.5 24 31 27" stroke="#F2C978" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".7"/>
+      </svg>
+      <span>La Psicología Cristiana<small>Mente y fe</small></span>
+    </a>
+    <a href="libro.pdf" class="btn btn-oro" download>
+      <svg aria-hidden="true"><use href="#i-descarga"/></svg>
+      <span><span class="largo">Descargar </span>Libro gratis</span>
+    </a>
+  </div>
+</header>
+
+<main>
+<!-- 2. HERO -->
+<section class="hero seccion" id="inicio">
+  <div class="luz" aria-hidden="true"></div>
+  <div class="contenedor">
+    <div class="aparecer">
+      <span class="etiqueta">Devocional gratis · 21 días</span>
+      <h1>Dios no te mira con la culpa con la que <em>tú te miras.</em></h1>
+      <p class="lead">Un devocional de 21 días para entender tu culpa desde la fe, soltar el pasado y volver a respirar en paz.</p>
+      <div class="botones">
+        <a href="libro.pdf" class="btn btn-oro btn-grande" download>
+          <svg aria-hidden="true"><use href="#i-descarga"/></svg>
+          Descargar el libro gratis
+        </a>
+        <a href="#app" class="btn btn-sec btn-grande">
+          <svg aria-hidden="true"><use href="#i-movil"/></svg>
+          Conocer la app Paz
+        </a>
+      </div>
+      <ul class="confianza">
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>100&nbsp;% gratis</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>PDF para leer donde quieras</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Un camino de 21 días</li>
+      </ul>
+    </div>
+    <div class="escena-libro aparecer" aria-hidden="true">
+      <div class="libro">
+        <div class="sello">Gratis<br>PDF</div>
+        <div class="tapa">
+          <div class="lomo"></div>
+          <span class="autor">La Psicología Cristiana</span>
+          <div class="titulo">Libérate de la culpa<span>Devocional cristiano</span></div>
+          <div class="numero">21<small>días</small></div>
+        </div>
+        <div class="paginas"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. FRANJA DEL ESLOGAN -->
+<section class="franja" aria-label="Eslogan">
+  <div class="contenedor">
+    <p>La mente se estudia. <span>El alma se cuida.</span></p>
+  </div>
+</section>
+
+<!-- 4. EL LIBRO -->
+<section class="seccion s-libro" id="libro">
+  <div class="contenedor rejilla-2">
+    <div class="escena-libro aparecer" aria-hidden="true">
+      <div class="libro">
+        <div class="tapa">
+          <div class="lomo"></div>
+          <span class="autor">La Psicología Cristiana</span>
+          <div class="titulo">Libérate de la culpa<span>Devocional cristiano</span></div>
+          <div class="numero">21<small>días</small></div>
+        </div>
+        <div class="paginas"></div>
+      </div>
+    </div>
+    <div class="aparecer">
+      <span class="etiqueta">El libro</span>
+      <h2>Tu pasado no tiene la última palabra.</h2>
+      <p class="lead"><strong class="oro">«Libérate de la culpa: 21 días»</strong> es un devocional cristiano gratuito para quienes cargan algo que no logran soltar. Un paso cada día, sin prisa y sin juicio.</p>
+
+      <div class="bloques">
+        <div class="bloque">
+          <h3>Es para ti si…</h3>
+          <ul class="lista">
+            <li><span class="check"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Cargas culpa por algo de tu pasado.</li>
+            <li><span class="check"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Sabes que Dios perdona, pero tú no logras perdonarte.</li>
+            <li><span class="check"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Sientes que Dios está lejos por tus errores.</li>
+          </ul>
+        </div>
+        <div class="bloque">
+          <h3>En 21 días vas a…</h3>
+          <ul class="lista">
+            <li><span class="check"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Entender tu culpa desde la fe.</li>
+            <li><span class="check"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Dar pasos concretos para soltar el pasado.</li>
+            <li><span class="check"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Aprender a caminar en libertad, un día a la vez.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pasos">
+        <div class="paso"><b>1</b>Descárgalo gratis en PDF.</div>
+        <div class="paso"><b>2</b>Lee una parte cada día durante 21 días.</div>
+        <div class="paso"><b>3</b>Camina a tu ritmo, con Dios a tu lado.</div>
+      </div>
+
+      <div class="botones">
+        <a href="libro.pdf" class="btn btn-oro btn-grande" download>
+          <svg aria-hidden="true"><use href="#i-descarga"/></svg>
+          Quiero mi libro gratis
+        </a>
+      </div>
+      <p class="nota">Sin costo. Lo descargas y es tuyo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. LA APP PAZ -->
+<section class="seccion s-app" id="app">
+  <div class="contenedor">
+    <div class="centro aparecer">
+      <span class="etiqueta">App Paz — Meditación cristiana</span>
+      <h2>Tu paz diaria, sin internet <span class="oro">y sin pagar nada.</span></h2>
+      <p class="lead">Paz es una app cristiana para orar, leer y descansar en Dios desde tu celular. Todo lo que necesitas, en un solo lugar.</p>
+      <ul class="gratis-chips">
+        <li>Sin anuncios</li>
+        <li>Sin suscripciones</li>
+        <li>Sin pagos</li>
+        <li>Funciona sin internet</li>
+      </ul>
+    </div>
+
+    <div class="tarjetas">
+      <article class="tarjeta destacada ancha aparecer">
+        <div class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><rect x="2" y="14" width="5" height="7" rx="2"/><rect x="17" y="14" width="5" height="7" rx="2"/></svg></div>
+        <h3>30 devocionales con audio</h3>
+        <p>Narrados y con animación. Un mes completo de paz diaria para escuchar donde estés.</p>
+      </article>
+      <article class="tarjeta ancha aparecer">
+        <div class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5V5a2 2 0 0 1 2-2h14v16H6.5A2.5 2.5 0 0 0 4 21.5v-2Z"/><path d="M12 7v6M9 10h6"/></svg></div>
+        <h3>Biblia Reina-Valera 1909</h3>
+        <p>Completa y sin internet. Busca por palabra o por libro y encuentra lo que necesitas al instante.</p>
+      </article>
+      <article class="tarjeta aparecer">
+        <div class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></div>
+        <h3>Planes de lectura</h3>
+        <p>Guías para leer la Biblia con propósito, paso a paso.</p>
+      </article>
+      <article class="tarjeta aparecer">
+        <div class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-9.2-9A5 5 0 0 1 12 6.6 5 5 0 0 1 21.2 12C19 16.6 12 21 12 21Z"/><path d="M8.5 12h2l1-2 1.5 4 1-2h1.5"/></svg></div>
+        <h3>Psicología Cristiana</h3>
+        <p>Mente y fe juntas, para entenderte y cuidar tu alma.</p>
+      </article>
+      <article class="tarjeta aparecer">
+        <div class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h2M11 8h2M15 8h2M7 12h2M11 12h2M15 12h2M7 16h10"/></svg></div>
+        <h3>Sopa de letras bíblica</h3>
+        <p>Un juego sencillo para memorizar la Palabra mientras te diviertes.</p>
+      </article>
+      <article class="tarjeta aparecer">
+        <div class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21 12 16l-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"/></svg></div>
+        <h3>Favoritos</h3>
+        <p>Guarda tus versículos y devocionales para volver a ellos cuando los necesites.</p>
+      </article>
+      <article class="tarjeta destacada ancha aparecer">
+        <div class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l20 20"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M5 12.9a10 10 0 0 1 5.2-2.8"/><path d="M19 12.9a10 10 0 0 0-2.2-1.6"/><path d="M2 8.8a15 15 0 0 1 4.2-2.7"/><path d="M22 8.8a15 15 0 0 0-11.3-3.8"/><circle cx="12" cy="20" r=".8" fill="currentColor"/></svg></div>
+        <h3>Todo offline</h3>
+        <p>Tu paz no depende del internet. Úsala en el metro, en el campo o en cualquier lugar.</p>
+      </article>
+    </div>
+
+    <div class="botones centro aparecer" style="justify-content:center">
+      <a href="#" class="btn btn-oro btn-grande">
+        <svg aria-hidden="true"><use href="#i-movil"/></svg>
+        Descargar la app Paz gratis
+      </a>
+    </div>
+    <p class="nota centro">100&nbsp;% gratis: sin anuncios, sin suscripciones, sin pagos.</p>
+  </div>
+</section>
+
+<!-- 6. EL CANAL -->
+<section class="seccion s-canal" id="canal">
+  <div class="contenedor">
+    <div class="rejilla-2">
+      <div class="aparecer">
+        <span class="etiqueta">El canal</span>
+        <h2>Entender tu mente también es cuidar tu fe.</h2>
+        <p class="lead">En La Psicología Cristiana explicamos por qué sentimos y actuamos como lo hacemos, desde la fe y en palabras sencillas. Ciencia honesta, sin datos inventados. Fe sin clichés. Y nunca te diremos que lo que sientes es porque «te falta fe».</p>
+      </div>
+      <div class="aparecer">
+        <div class="formato">«La Psicología Cristiana de las Personas que <span>[algo que tú también vives]</span>»</div>
+        <p class="nota">Así se llaman nuestros videos: conductas reales, explicadas con cariño y verdad.</p>
+      </div>
+    </div>
+
+    <div class="videos">
+      <a class="video aparecer" href="https://www.youtube.com/@LaPsicologiaCristiana" target="_blank" rel="noopener">
+        <div class="miniatura"><span class="play"><svg aria-hidden="true"><use href="#i-play"/></svg></span><span class="tema">Oran y no sienten paz</span></div>
+        <div class="info"><small>Ansiedad</small><p>Por qué la ansiedad no siempre se va al orar, y qué significa eso.</p></div>
+      </a>
+      <a class="video aparecer" href="https://www.youtube.com/@LaPsicologiaCristiana" target="_blank" rel="noopener">
+        <div class="miniatura"><span class="play"><svg aria-hidden="true"><use href="#i-play"/></svg></span><span class="tema">Sienten culpa al descansar</span></div>
+        <div class="info"><small>Culpa</small><p>Cuando parar parece pecado y el cansancio se vuelve costumbre.</p></div>
+      </a>
+      <a class="video aparecer" href="https://www.youtube.com/@LaPsicologiaCristiana" target="_blank" rel="noopener">
+        <div class="miniatura"><span class="play"><svg aria-hidden="true"><use href="#i-play"/></svg></span><span class="tema">Ponen límites sin culpa</span></div>
+        <div class="info"><small>Límites</small><p>Decir «no» también puede ser una forma de amar.</p></div>
+      </a>
+      <a class="video aparecer" href="https://www.youtube.com/@LaPsicologiaCristiana" target="_blank" rel="noopener">
+        <div class="miniatura"><span class="play"><svg aria-hidden="true"><use href="#i-play"/></svg></span><span class="tema">Perdonan sin olvidar</span></div>
+        <div class="info"><small>Perdón</small><p>Perdonar no es borrar la memoria. Es soltar la deuda.</p></div>
+      </a>
+    </div>
+
+    <div class="botones centro aparecer" style="justify-content:center">
+      <a href="https://www.youtube.com/@LaPsicologiaCristiana?sub_confirmation=1" class="btn btn-yt btn-grande" target="_blank" rel="noopener">
+        <svg aria-hidden="true"><use href="#i-youtube"/></svg>
+        Suscríbete en YouTube
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 7. REDES -->
+<section class="s-redes" id="redes">
+  <div class="contenedor">
+    <div class="centro aparecer">
+      <span class="etiqueta">Comunidad</span>
+      <h2>Acompáñanos donde estés.</h2>
+      <p class="lead">Contenido breve para tu día a día, en tu red favorita.</p>
+    </div>
+    <div class="redes aparecer">
+      <a class="red" href="https://www.youtube.com/@LaPsicologiaCristiana" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-youtube"/></svg><span>YouTube<small>@LaPsicologiaCristiana</small></span></a>
+      <a class="red" href="https://www.tiktok.com/@pinta_mente" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tiktok"/></svg><span>TikTok<small>@pinta_mente</small></span></a>
+      <a class="red" href="https://www.instagram.com/psicologiacristiana.oficial/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-instagram"/></svg><span>Instagram<small>@psicologiacristiana.oficial</small></span></a>
+      <a class="red" href="#"><svg aria-hidden="true"><use href="#i-facebook"/></svg><span>Facebook<small>La Psicología Cristiana</small></span></a>
+      <a class="red" href="#"><svg aria-hidden="true"><use href="#i-rumble"/></svg><span>Rumble<small>La Psicología Cristiana</small></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 8. CIERRE -->
+<section class="cierre centro" id="cierre">
+  <div class="contenedor aparecer">
+    <span class="etiqueta">Un último paso</span>
+    <h2>Hoy puede ser el día uno.</h2>
+    <p class="mensaje">No tienes que cargar con todo esto sola o solo. Empieza hoy, a tu ritmo. Un paso pequeño, pero tuyo.</p>
+    <p class="eslogan-grande">La mente se estudia. <span>El alma se cuida.</span></p>
+    <div class="botones">
+      <a href="libro.pdf" class="btn btn-oro btn-grande" download>
+        <svg aria-hidden="true"><use href="#i-descarga"/></svg>
+        Descargar el libro gratis
+      </a>
+    </div>
+    <p class="nota">Devocional «Libérate de la culpa: 21 días» · PDF gratuito</p>
+  </div>
+</section>
+</main>
+
+<!-- 9. FOOTER -->
+<footer>
+  <div class="contenedor">
+    <a href="#inicio" class="logo" aria-label="La Psicología Cristiana, volver al inicio">
+      <svg class="logo-marca" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="#0B1B33" stroke="url(#gradOro)" stroke-width="1.5"/>
+        <path d="M20 8v24M13 15h14" stroke="url(#gradOro)" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M9 27c3.5-3 7.2-4.4 11-4.4S27.5 24 31 27" stroke="#F2C978" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".7"/>
+      </svg>
+      <span>La Psicología Cristiana</span>
+    </a>
+    <p class="eslogan">La mente se estudia. El alma se cuida.</p>
+    <ul class="mini-redes">
+      <li><a href="https://www.youtube.com/@LaPsicologiaCristiana" target="_blank" rel="noopener" aria-label="YouTube"><svg aria-hidden="true"><use href="#i-youtube"/></svg></a></li>
+      <li><a href="https://www.tiktok.com/@pinta_mente" target="_blank" rel="noopener" aria-label="TikTok"><svg aria-hidden="true"><use href="#i-tiktok"/></svg></a></li>
+      <li><a href="https://www.instagram.com/psicologiacristiana.oficial/" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+      <li><a href="#" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-facebook"/></svg></a></li>
+      <li><a href="#" aria-label="Rumble"><svg aria-hidden="true"><use href="#i-rumble"/></svg></a></li>
+    </ul>
+    <p class="legal">© <span id="anio">2026</span> La Psicología Cristiana. El contenido es orientativo y no sustituye la atención de un profesional de la salud mental.</p>
+  </div>
+</footer>
+
+<!-- Botón flotante en celular -->
+<div class="cta-movil" id="ctaMovil">
+  <a href="libro.pdf" class="btn btn-oro" download>
+    <svg aria-hidden="true"><use href="#i-descarga"/></svg>
+    Descargar el libro gratis
+  </a>
+</div>
+
+<script>
+(function(){
+  document.body.classList.remove('no-js');
+  var barra=document.getElementById('barra');
+  var cta=document.getElementById('ctaMovil');
+  var hero=document.getElementById('inicio');
+  var cierre=document.getElementById('cierre');
+  document.getElementById('anio').textContent=new Date().getFullYear();
+
+  function alDesplazar(){
+    var y=window.scrollY||window.pageYOffset;
+    barra.classList.toggle('fija',y>20);
+    var finHero=hero.offsetTop+hero.offsetHeight-120;
+    var inicioCierre=cierre.getBoundingClientRect().top<window.innerHeight;
+    cta.classList.toggle('visible',y>finHero&&!inicioCierre);
+  }
+  window.addEventListener('scroll',alDesplazar,{passive:true});
+  alDesplazar();
+
+  var elementos=document.querySelectorAll('.aparecer');
+  if('IntersectionObserver' in window){
+    var obs=new IntersectionObserver(function(entradas){
+      entradas.forEach(function(e){
+        if(e.isIntersecting){e.target.classList.add('visto');obs.unobserve(e.target);}
+      });
+    },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+    elementos.forEach(function(el){obs.observe(el);});
+  }else{
+    elementos.forEach(function(el){el.classList.add('visto');});
+  }
+})();
+</script>
+<script data-goatcounter="https://psicologiacristiana.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
